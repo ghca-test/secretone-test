@@ -21,5 +21,6 @@ jobs:
           SECRETONE_CREDENTIAL: ${{ secrets.SECRETONE_CREDENTIAL }}
           PASSSECRET: secretone://cloud-ad/repo-ad-cloud/aws-dir1/s-3
           SECRETONE_CREDENTIAL_PASSPHRASE: "123"
+          SECRETONE_API_REMOTE: https://secretone.gh-ca.com:13443
       - name: Print environment with masked secrets
         run: printenv
